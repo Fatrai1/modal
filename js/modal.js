@@ -3,15 +3,16 @@ let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
-    modal.style.display = "flex";
+  document.getElementById("myModal").className = "modal_visible";
   }
 
+
   span.onclick = () => {
-    modal.style.display = "none";
+    document.getElementById("myModal").className = "modal";
   }
   
   window.onclick = function(event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+      document.getElementById("myModal").className = "modal";
     }
   }
