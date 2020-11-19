@@ -132,8 +132,13 @@ main h1 {
     overflow: auto;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
+    animation-name: animatetop;
+    animation-duration: 0.3s;
 }
-    
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
     
     .modal-content {
       background-color: #fefefe;
@@ -183,6 +188,7 @@ main h1 {
     .btnOk{
       background-color: rgb(4, 250, 4);
     }
+   
   
     @media(min-width: 560px) {
       .modal-content{
